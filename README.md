@@ -1,0 +1,3 @@
+- Hola! Gracias por visitar mi portafolio 🙌💼.
+- Este Portafolio estará en constantes mejoras 🔨.
+- Por el momento no es responsiva 🚫📱.

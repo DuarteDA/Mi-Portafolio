@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Duarte Portafolio</title>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/5e48ebae80.js" crossorigin="anonymous"></script>
+
+    <!-- remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="svg/portfolio.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#section-2">Presentación</a></li>
+                <li><a href="#section-3">Habilidades</a></li>
+                <li><a href="#section-4">Proyectos</a></li>
+                <li><a href="#section-6"> Contactos</a></li>
+                <!-- <li><a href="#">Cv</a></li>         -->
+            </ul>                
+        </nav> 
+    </header>
+            <div id="line-container">
+                <hr id="line">
+            </div>
+    <section id="section-1">
+        <h1>Mi Portafolio</h1>
+    </section>
+<hr>
+        <section id="section-2">
+            <div class="img-container">
+            <img src="img/img1.jpg" alt="Foto en perfil de daniel">
+            </div>
+            <div class="part1">
+            <h1>Sobre mí</h1>
+            <p>Hola, soy Daniel Duarte, desde pequeño he sido un apasionado de la tecnología hasta que descubrí la programación y hoy en día decidí estudiarla. Con 20 años, estoy siempre en busca de nuevos conocimientos y actualizaciones en el mundo IT. Aprendo rápido, soy responsable y respetuoso, y estoy emocionado por conseguir mi primer trabajo en el sector.</p>
+            </div>
+        </section>
+        <hr>
+
+        <section id="section-3">
+            <div class="container">
+            <h1 class="title">Habilidades</h1>
+            <div class="sub-section">
+                <p class="subtitle"><b>Desarrollo Web</b></p>
+                <div class="img">
+                <img class="tucutucu" src="svg/html5.svg" alt="Imagen 1" onmouseover="showMensaje(this, 'HTML5')" onmouseout="hideMensaje()">
+                <img class="tucutucu"src="svg/css3.svg" alt="Imagen 2" onmouseover="showMensaje(this, 'CSS3')" onmouseout="hideMensaje()">
+                <img class="tucutucu"src="svg/javascript.svg" alt="Imagen 3" onmouseover="showMensaje(this, 'JavaScript')" onmouseout="hideMensaje()">
+                </div>
+            </div>
+            <div class="sub-section">
+                <p class="subtitle"><b>Lenguajes</b></p>
+                <div class="img">
+                <img class="tucutucu"src="svg/c.svg" alt="Imagen 5" onmouseover="showMensaje(this, 'C')" onmouseout="hideMensaje()">
+                <!-- <img src="svg/java.svg" width="45px" alt="Imagen 6" onmouseover="showMensaje(this, 'Java')" onmouseout="hideMensaje()"> -->
+                </div>
+            </div>
+            <div class="sub-section">
+                <p class="subtitle"><b>Tecnologías</b></p>
+                <div class="img">
+                <img class="tucutucu"src="svg/github.svg" alt="Imagen 6" onmouseover="showMensaje(this, 'GitHub')" onmouseout="hideMensaje()">
+                <img class="tucutucu"src="svg/git.svg" alt="Imagen 7" onmouseover="showMensaje(this, 'Git')" onmouseout="hideMensaje()">
+                </div>
+            </div>
+            <div class="sub-section">
+                <p class="subtitle"><b>idioma</b></p>
+                <div class="img">
+                <img class="tucutucu"src="svg/language.svg" alt="Imagen 6" onmouseover="showMensaje(this, 'ingles A1')" onmouseout="hideMensaje()">
+                </div>
+            </div>
+            </div>
+        </section>
+<hr>
+
+<section id="section-4">
+    <h1 class="title">Mis Proyectos</h1>
+    <p>A continuación te mostraré mis proyectos realizados hasta el momento</p>
+</section>
+
+<hr>
+
+
+<section id="section-5">
+    <div class="container-img">
+        <div class="carousel">
+            <img src="img/1.png" alt="">
+            <img src="img/2.png" alt="">
+            <img src="img/3.png" alt="">
+            <img src="img/4.png" alt="">
+        </div>
+        <div class="boton">
+            <a href="https://duarteda.github.io/Demostracion/" target="_blank" >Link al Proyecto</a>
+        </div>
+        <div class="descripcion">
+            <p>Página de ventas de cursos.
+            <br>Se usó solamente HTML5 y CSS3.</p>
+        </div>
+        
+    </div>
+
+    <div class="container-img">
+        <div class="form">
+            <img src="img/form.png" alt="">  
+            <img src="img/form2.png" alt="">
+        </div>
+        <div class="boton">
+            <a href="https://duarteda.github.io/Form/" target="_blank" >Link al Proyecto</a>
+        </div>
+        <div class="descripcion">
+            <p>Es un formulario de inicio de sesión y de registro. 
+            <br>Se usó JavaScript para guardar la información.</p>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<Section id="section-6">
+    <h1>
+        Contactos
+    </h1>
+    <div class="icons">
+        <a href="https://www.instagram.com/20daniiell02/" target="_blank" class="icon icon--instagram">
+        <i class="ri-instagram-line"></i>
+        </a>
+        <!-- <a href="#" class="icon icon--twitter">
+        <i class="ri-twitter-line"></i>
+        </a> -->
+        <a href="https://www.linkedin.com/in/danielduarte02/"target="_blank" class="icon icon--linkedin">
+        <i class="ri-linkedin-line"></i>
+        </a>
+        <a href="https://github.com/DuarteDA" class="icon icon--github" target="_blank">
+        <i class="ri-github-line"></i>
+        </a>
+        <a href="mailto:danielduartebj186@gmail.com" class="icon icon--mail" target="_blank">
+            <i class="ri-mail-line"></i>
+            </a>
+    </div>
+
+
+</Section>
+
+</body>
+</html>

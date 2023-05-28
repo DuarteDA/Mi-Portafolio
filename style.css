@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,700&family=Roboto:wght@100;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #131011;
+    cursor: url(svg/puntero.svg), auto;
+}
+
+header {
+    
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 5vh;
+    position: fixed;
+    background: #131011;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 100%; 
+}
+
+header nav ul li{
+    margin-right: 2vh; 
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: ease 0.2s;
+    cursor: url(svg/puntero.svg), auto;
+}
+
+header nav ul li a:hover{
+    color: #a1959a;
+
+}
+
+#section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#section-1 h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* #puntos{
+    padding: 1vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    color: #5CEEF2;
+    cursor: pointer;
+}
+
+#puntos i{
+    margin: 2px;
+} */
+
+#section-2 {
+    margin-top: 10vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 50%;
+    border-radius: 50%;
+    height: auto;
+}
+
+.part1 {
+    padding-right: 10vh;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+p{
+    color: #ffffff;
+}
+
+.title {
+    grid-column: 1 / -1;
+    margin-top: 0;
+}
+#section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sub-section {
+    grid-column: span 1;
+    margin-bottom: 2rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-top: 0;
+    text-transform: uppercase;
+    cursor: default;
+    transition: ease 0.3s;
+    cursor: url(svg/puntero.svg), auto;
+}
+
+.subtitle:hover {
+    color: #a1959a;
+}
+.mensaje {
+    color: #000;
+    display: none;
+    position: absolute;
+    bottom: -35px;
+    left: 30%;
+    padding: 3px;
+    background-color: #fff ;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.img:hover .mensaje {
+    display: block;
+    animation: tucutucu 0.7s ease-in-out infinite;
+
+}
+
+.img {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.img img {
+    cursor: url(svg/puntero.svg), auto;
+    margin: 1vh;
+    transition: ease 0.3s;
+}
+
+.tucutucu:hover  {
+    animation: tucutucu 0.7s ease-in-out infinite;
+}
+
+@keyframes tucutucu {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.2);
+    }
+    100% {
+    transform: scale(1);
+    }
+} 
+
+#section-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+#section-5{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+}
+
+.container-img {
+    background-color: #1a1718;
+    border-radius: 20px;
+    width: 35%;
+    height: 60%;
+    margin-top: 10%;
+}
+
+.carousel img {
+    display: none;
+    width: 55%;
+    margin-left: 23%;
+    margin-top: 10%;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+.boton{
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+.boton a{
+    color: #fff;
+    background-color: #131011;
+    font-weight:bold;
+    padding: 1vh;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border:none;
+    border-radius: 50px;
+    transition: ease 0.4s;
+    cursor: url(svg/puntero.svg), auto;
+}
+
+.boton a:hover{
+    color:#131011;
+    background-color: #fff;
+}
+
+.descripcion p{
+    margin-top: 10vh;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 3vh;
+}
+
+.form img{
+    display: none;
+    width: 55%;
+    margin-top: 10%;
+    margin-left: 23%;
+}
+.form img.active {
+    display: block;
+}
+
+#line-container {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 5vh;
+    right: 0;
+    height: 1px;
+    width: 100%;
+}
+
+#line {
+    height: 100%;
+    background-color: #fff;
+    border: none;
+}
+
+#section-6{
+    display: block;
+    text-align: center;
+    height: 60vh;
+    margin-top: 40vh;
+}
+
+.icons {
+	display: flex;
+	column-gap: 25px;
+    justify-content: center;
+}
+.icon {
+	display: inline-flex;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	font-size: 26px;
+	color: #fff;
+	border-radius: 50%;
+	outline: 2px solid #fff;
+	transition-property: outline-offset, outline-color, background-color;
+	transition-duration: 0.20s;
+    cursor: url(svg/puntero.svg), auto;
+}
+.icon:hover {
+	outline-offset: 5px;
+}
+.icon i {
+	margin: auto;
+}
+
+.icon:hover i{
+    animation: tucutucu 0.7s ease-in-out infinite;
+}
+@keyframes tucutucu {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.2);
+    }
+    100% {
+    transform: scale(1);
+    }
+} 
+
+.icon--instagram:hover {
+	background-image: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	outline-color: #a02d76;
+    color: #fff;
+}
+/* .icon--twitter:hover {
+	background-color: #1da1f2;
+	outline-color: #1da1f2;
+    color: #fff;
+} */
+.icon--linkedin:hover {
+	background-color: #0077b5;
+	outline-color: #0077b5;
+    color: #fff;
+}
+.icon--github:hover {
+	background-color: #fff;
+	outline-color: #fff;
+    color: #000;
+}
+
+.icon--mail:hover{
+	background-color:#C6231F;
+	outline-color: #C6231F;
+    color: #fff;
+}
+@keyframes shake {
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
+}
